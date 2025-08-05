@@ -2,6 +2,16 @@
 name = "rss_parser"
 version = "0.1.0"
 edition = "2024"
+authors = ["Hamid <hrdavodi@gmail.com>"]
+description = "A high-performance, streaming RSS parser for Rust with generic AsyncRead support"
+homepage = "https://github.com/hamidr/rss_parser"
+repository = "https://github.com/hamidr/rss_parser"
+documentation = "https://docs.rs/rss_parser"
+readme = "README.md"
+license = "MIT"
+keywords = ["rss", "xml", "parser", "async", "streaming"]
+categories = ["parsing", "web-programming", "asynchronous"]
+rust-version = "1.88"  # Minimum supported Rust version
 
 [dependencies]
 tokio = { version = "1.46.1", features = ["full"] }
@@ -9,8 +19,6 @@ tokio-stream = "0.1.17"
 quick-xml = { version ="0.38.0", features = ["async-tokio"] }
 serde = { version = "1.0.219", features = ["derive"] }
 serde_json = "1.0"
-
-
 
 [dev-dependencies]
 tokio-test = "0.4"
